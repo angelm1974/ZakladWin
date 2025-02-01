@@ -21,7 +21,8 @@ namespace ZakladWin
             frmClient frm = new frmClient();
             frm.ShowDialog();
             if (frm.DialogResult == DialogResult.OK) {
-                Program.ListaKlientow.Add(frm.klient); 
+                //Program.ListaKlientow.Add(frm.klient);
+                DataBase.AddClient(frm.klient);
             }
                
         }
